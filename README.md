@@ -30,17 +30,23 @@ A Datasmart trabalha sempre com feedbacks construtivos e, portanto, daremos semp
 
 ## :clipboard: Instruções
 
-1. Faça um fork desse projeto para a sua conta pessoal do GitHub;
+1. Faça um fork desse projeto;
 
-2. Crie uma branch com o padrão: `backend-challenge/seu-nome-sobrenome`;
+2. Crie uma branch para o seu desafio no padrão: `git checkout -b backend-challenge/seu-nome-sobrenome`;
 
-3. Siga as especificações abaixo;
+3. Realize o desafio seguindo a seção de especificações;
 
 4. Crie um README com uma descrição e instruções para compilar e rodar o projeto;
 
-5. Ao terminar o teste, solicite um pull request;
+5. Adicione seu desafio para transferência `git add .`;
 
-6. Envie um email para `vagas@datasmart.com.br` com o título: `Desenvolvedor Backend - Seu Nome Sobrenome`. Adicione seu telefone, LinkedIn, seu perfil do GitHub e em anexo seu currículo.
+6. Faça commit do seu desafio `git commit -m 'Challenge'`;
+
+7. Faça o push da branch: `git push origin backend-challenge/seu-nome-sobrenome`;
+
+8. Abra um pull request com o nome `Challenge: Seu Nome Sobrenome`;
+
+9. Envie um email para `vagas@datasmart.com.br` com o título: `Desenvolvedor Backend - Seu Nome Sobrenome`. Adicione seu telefone, LinkedIn, seu perfil do GitHub e em anexo seu currículo.
 
 ## :wrench: Especificações técnicas
 
