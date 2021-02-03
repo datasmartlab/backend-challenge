@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/datasmartlab/backend-challenge/blob/master/.github/assets/logo.png" height="150" width="150" alt="Datasmart" />
+  <img src="https://github.com/datasmartlab/backend-challenge/blob/main/.github/assets/logo.png" height="150" width="150" alt="Datasmart" />
 </p>
 
 <h3 align="center">Datasmart</h3>
