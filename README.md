@@ -46,7 +46,7 @@ A Datasmart trabalha sempre com feedbacks construtivos e, portanto, daremos semp
 
 8. Abra um pull request com o nome `Challenge: Seu Nome Sobrenome`;
 
-9. Envie um email para `vagas@datasmart.com.br` com o título: `Desenvolvedor Backend - Seu Nome Sobrenome`. Adicione seu telefone, LinkedIn, seu perfil do GitHub e em anexo seu currículo.
+9. Envie um email para `marcos@datasmart.com.br` com o título: `Desenvolvedor Backend - Seu Nome Sobrenome`. Adicione seu telefone, LinkedIn, seu perfil do GitHub e em anexo seu currículo.
 
 ## :wrench: Especificações técnicas
 
@@ -104,7 +104,7 @@ A Datasmart trabalha sempre com feedbacks construtivos e, portanto, daremos semp
 
 ## :question: Dúvidas
 
-Em caso de dúvidas, crie uma issue ou envie um e-mail para `vagas@datasmart.com.br`.
+Em caso de dúvidas, crie uma issue ou envie um e-mail para `marcos@datasmart.com.br`.
 
 Boa sorte!
 
