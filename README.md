@@ -1,113 +1,54 @@
-<p align="center">
-  <img src="https://github.com/datasmartlab/backend-challenge/blob/main/.github/assets/logo.png" height="150" width="150" alt="Datasmart" />
-</p>
+# backend-challenge
 
-<h3 align="center">Datasmart</h3>
+## Sobre o projeto
 
-<p align="center">Desafio para os candidatos à vaga de desenvolvedor Backend na Datasmart.</p>
+Foi Desenvolvido uma API com rotas para criação de usuário, autenticação e um CRUD de produtos.
 
-<p align="center">:pushpin: Local de trabalho: Avaré - SP</p>
+## Tecnologias utilizadas
 
-<br>
+- Node.js;
+- framework Express.js;
+- Sequelize;
+- JWT;
+- Yup;
+- bcryptjs;
+- MySQL;
+- Insomnia;
+- Yarn;
+- Sucrase;
 
-<div align="center">
-  <a href="#memo-apresentação">Apresentação</a>   |   <a href="#clipboard-instruções">Instruções</a>   |   <a href="#wrench-especificações-técnicas">Especificações técnicas</a>   |   <a href="#gear-especificações-funcionais">Especificações funcionais</a>   |   <a href="#heavy_check_mark-o-que-será-avaliado">O que será avaliado?</a>   |   <a href="#question-dúvidas">Dúvidas</a>
-</div>
+## Como executar a API
 
-<br>
+Pré-requisitos: Node.js e Yarn
 
-## :memo: Apresentação
+```bash
+#clonar repositório.
+git clone git@github.com:datasmartlab/backend-challenge.git
 
-O desafio é desenvolver uma API com rotas para criação de usuário, autenticação e um CRUD de produtos, seguindo todas as especificações abaixo.
+#carregar as modificações do repositório para seu computador.
+git pull
 
-Esse desafio é um teste de nivelamento e para avaliarmos o quão bom você é :)
+#instalar as dependências.
+yarn install
 
-O desafio é público e todos os interessados que fizerem pull request receberão um feedback da nossa equipe.
+#executar o projeto.
+yarn start
 
-Esperamos que todas as pessoas que queiram trabalhar conosco tentem realizá-lo.
+#caso precise criar e excutar as migrations.
 
-A Datasmart trabalha sempre com feedbacks construtivos e, portanto, daremos sempre uma atenção especial para todos que submeterem o teste. Vale a pena tentar! :)
+#cria migrates users.
+yarn sequelize migration:create --name=create-users
 
-## :clipboard: Instruções
+#cria migrates products
+yarn sequelize migration:create --name=create-products
 
-1. Faça um fork desse projeto;
+#executa as migration
+yarn sequelize db:migrate
 
-2. Crie uma branch para o seu desafio no padrão: `git checkout -b backend-challenge/seu-nome-sobrenome`;
+#desfaz a alteração feita na migration
+yarn sequelize db:migrate:undo
+```
 
-3. Realize o desafio seguindo a seção de especificações;
+- importe o arquivo dentro da pasta insomnia-teste-rotas em seu insomnia, para testar as rotas.
 
-4. Crie um README com uma descrição e instruções para compilar e rodar o projeto;
-
-5. Adicione seu desafio para transferência `git add .`;
-
-6. Faça commit do seu desafio `git commit -m 'Challenge'`;
-
-7. Faça o push da branch: `git push origin backend-challenge/seu-nome-sobrenome`;
-
-8. Abra um pull request com o nome `Challenge: Seu Nome Sobrenome`;
-
-9. Envie um email para `vagas@datasmart.com.br` com o título: `Desenvolvedor Backend - Seu Nome Sobrenome`. Adicione seu telefone, LinkedIn, seu perfil do GitHub e em anexo seu currículo.
-
-## :wrench: Especificações técnicas
-
-- Utilizar Node.js;
-
-- Usar framework Express.js;
-
-- Utilizar Sequelize para ORM;
-
-- Usar autenticação JWT;
-
-- Utilizar Yup para validar a entrada de dados;
-
-- Usar bcryptjs para criptografar a senha;
-
-- Utilizar banco de dados MySQL;
-
-- Usar o Insomnia para exportar as rotas.
-
-## :gear: Especificações funcionais
-
-- A API deve conter as migrations, modelos (models), controles (controllers) e rotas (routes).
-
-- Deve ter uma criação de usuário com os campos nome, email e senha.
-
-- Deve ser criado uma autenticação de usuário com os campos email e senha.
-
-- Deve ser criado um CRUD de produtos com os campos nome, descrição e preço do produto.
-
-- O usuário somente poderá acessar as rotas de CRUD de produtos (get, post, put, delete) se estiver previamente autenticado.
-
-- Criptografar a senha do usuário ao ser salva no banco de dados.
-
-- Ao ocorrer um erro de validação na entrada de dados, retornar uma mensagem de erro.
-
-- Usar o Insomnia para exportar as rotas em arquivo json e adicione junto com o projeto.
-
-## :heavy_check_mark: O que será avaliado?
-
-- Conhecimento do Node.js, framework Express e suas bibliotecas utilizadas;
-
-- Boas práticas com o código (lint, indentação, padrões, etc);
-
-- Organização e estrutura do projeto;
-
-- Código Javascript;
-
-- Uso de migrations, rotas, modelos e controles;
-
-- Uso do Git;
-
-- Performance e segurança;
-
-- Documentação.
-
-## :question: Dúvidas
-
-Em caso de dúvidas, crie uma issue ou envie um e-mail para `vagas@datasmart.com.br`.
-
-Boa sorte!
-
----
-
-Desenvolvido com 💖 por Datasmart
+- A será inicializada na porta 3000
