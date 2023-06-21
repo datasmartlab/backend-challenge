@@ -6,8 +6,9 @@ const server = Express();
 dotEnv.config();
 server.use(Express.json());
 server.use(routes)
+
 server.use((req: Request, res: Response) => {
-    res.status(404).send("Rota não encontrada");
+    res.status(404).json("Rota não encontrada");
 });
 
 server.listen(process.env.PORT)
