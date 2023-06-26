@@ -1,14 +1,14 @@
 import { Model, DataTypes } from 'sequelize';
 import { sequelize } from '../migrations/mysql';
 
-interface userInterface extends Model{
+interface userData extends Model{
     id:number,
     name:string,
     email:string,
     password:string
 }
 
-export const User = sequelize.define<userInterface>(
+export const User = sequelize.define<userData>(
     'userData',{
         id:{
             primaryKey:true,

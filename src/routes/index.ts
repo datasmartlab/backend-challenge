@@ -1,17 +1,15 @@
-import {Router} from 'express'
-import * as UserController from '../controllers/userController'
+import { Router } from 'express'
+import * as userController from '../controllers/userController'
 import * as productController from '../controllers/productController'
-import * as testeController from '../controllers/testeController'
-const routes=Router();
 
-routes.post('/createUser',UserController.createUser);
-routes.post('/signInUser',UserController.signInUser);
+const routes = Router();
 
-routes.post('/product',productController.addProduct);
-routes.put('/product',productController.alterProduct);
-routes.get('/product',productController.getAllProducts);
-routes.delete('/product',productController.deleteProduct);
+routes.post('/createUser', userController.createUser);
+routes.post('/signInUser', userController.signInUser);
 
-routes.get('/',testeController.teste)
+routes.post('/product', productController.addProduct);
+routes.put('/product', productController.alterProduct);
+routes.get('/product', productController.getAllProducts);
+routes.delete('/product', productController.deleteProduct);
 
 export default routes;

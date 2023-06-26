@@ -1,14 +1,14 @@
 import { Model, DataTypes } from 'sequelize';
 import { sequelize } from '../migrations/mysql';
 
-interface productInterface extends Model{
+interface productData extends Model{
     id:number,
     name:string,
     description:string,
     price:Number
 }
 
-export const Product = sequelize.define<productInterface>(
+export const Product = sequelize.define<productData>(
     "productData",{
         id:{
             primaryKey:true,

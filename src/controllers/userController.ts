@@ -19,8 +19,8 @@ export const  createUser = async (req:Request, res:Response)=>{
             password:req.body.password
         }
         await addUserSchema.validate(userData)
-        const results = await User.findAll({where:{email:userData.email}})
-        if(results.length<1){
+        const results = await User.findAll({ where:{ email:userData.email }})
+        if(results.length < 1){
             userData.password = encrypt(userData.password)
             const user = User.build({
                 name:userData.name,
@@ -33,7 +33,7 @@ export const  createUser = async (req:Request, res:Response)=>{
             res.status(409).json('Esse email ja esta cadastrado');
         }
     }catch(error){
-        return res.status(400).json(error)
+        return res.status(500).json(error)
     }
 }
 export const signInUser = async(req:Request,res:Response)=>{
@@ -47,8 +47,8 @@ export const signInUser = async(req:Request,res:Response)=>{
 
         const results = await User.findAll({ where:{ email:userData.email } })
 
-        if(results.length==1){
-            const comparation=await bcrypt.compare(userData.password, results[0].password);
+        if(results.length == 1){
+            const comparation = await bcrypt.compare(userData.password, results[0].password);
             if(comparation){
                 const token = generateAccessToken(userData.email,userData.password);
                 res.json({message:'Usuario logado com sucesso', token:token});
